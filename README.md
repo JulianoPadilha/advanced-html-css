@@ -2,6 +2,6 @@
 
 ## Summary
 
-![Perfomance and Organization](Perfomance and Organization.md)
+[Perfomance and Organization](Perfomance and Organization.md)
 
 >Fonte: http://learn.shayhowe.com/
