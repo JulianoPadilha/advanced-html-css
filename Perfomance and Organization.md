@@ -20,3 +20,8 @@ A arquiterura esboçada acima inclui três diretórios, todos com grupos individ
 
 O diretório `base` inclui estilos e variáveis comuns a serem utilizados ao longo de todos os estilos do site, layout e tipografia, por exemplo. O diretório `components` inclui estilos para elementos específicos de interface e que são separados em diferentes arquivos, como alerts e buttons. Por último, o diretório `modules` inclui estilos para diferentes seções de uma página, e que são determinadas pelas necessidades do negócio.
 
+Os componentes de estilos são puramente orientados a interface e não têm nada a ver com a lógica de negócios do site. Módulos em seguida incluem estilos específicos para a lógica do negócio. Quando criando a marcação de um módulo em HTML é comum o uso de diferentes componentes de interface dentro dele. Por exemplo, o sidebar de uma página pode ter um estilos de lists e buttons que são definidos dentro de estilos de componentes, enquanto outros estilos necessários para o sidebar são herdados dos estilos dos módulos. A separação de estilos incentiva conjuntos bem pensados e dá a capacidade de estilos serem amplamente compartilhados e reutilizados.
+
+A estratégia de organizar estilos desta forma não é exatamente nova, e foi anteriormente mencionsado em diferentes metodologias de CSS, incluindo *Object Oriented CSS, OOCSS*, e *Scalable and Modular Architecture for CSS, SMACSS.* Essas metodologias possuem suas próprias opiniões sobre a estrutura, como também sobre como utilizar estilos.
+
+### Object Oriented CSS
