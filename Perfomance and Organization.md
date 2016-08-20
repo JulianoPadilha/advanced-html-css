@@ -25,3 +25,21 @@ Os componentes de estilos são puramente orientados a interface e não têm nada
 A estratégia de organizar estilos desta forma não é exatamente nova, e foi anteriormente mencionsado em diferentes metodologias de CSS, incluindo *Object Oriented CSS, OOCSS*, e *Scalable and Modular Architecture for CSS, SMACSS.* Essas metodologias possuem suas próprias opiniões sobre a estrutura, como também sobre como utilizar estilos.
 
 ### Object Oriented CSS
+
+A metodologia [CSS Orientado a Objeto](http://oocss.org/) foi iniciada por Nicole Sullivan em seu trabalho escrevendo estilos para grandes sites. CSS Orientado a Objeto identifica dois princípios que vão ajudar a construir sites escaláveis, com uma forte arquitetura e uma quantidade razoável de código. Estes dois principios incluem: 
+
+- Estrutura separada das interface
+
+- Conteúdo separado dos containers
+
+No geral, **separar a estrutura da interface** inclui abstrair o layout de um elemento do tema de uma site. A estrutura de uma módulo deve ser tranparente, permitindo que outros estilos sejam herdados e exibidos sem conflitos. Mais comumente, isso querer uma estrutura de grid e um layout sólio, juntamente com módulos bem trabalhados. 
+
+Separar o conteúdo dos containers envolve a remoção de dependências de um elemento pai envolvendo um elemento filho. Um título deve ter a mesma aparência independentemente da sua área de conteúdo. Para conseguir isso, os elementos precisam herdar estilos padrões, e então serem estendidos com múltiplas classes, se necessário.
+
+![](images/chapter1-img1.png)
+
+![](images/chapter1-img2.png)
+
+CSS Orientado a Objeto defende a construção de uma biblioteca de componentes, mantendo a flexibilidade, e utilizando um grid. Estas são boas regras básicas, e elas pode te ajudar a evitar a necessidade de adicionar estilos adicionais cada vez que você adicionar uma nova página ou uma nova recurso para um site. 
+
+### Scalable & Modular Architecture for CSS
