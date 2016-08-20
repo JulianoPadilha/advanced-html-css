@@ -26,7 +26,7 @@ A estratégia de organizar estilos desta forma não é exatamente nova, e foi an
 
 ### Object Oriented CSS
 
-A metodologia [CSS Orientado a Objeto](http://oocss.org/) foi iniciada por Nicole Sullivan em seu trabalho escrevendo estilos para grandes sites. CSS Orientado a Objeto identifica dois princípios que vão ajudar a construir sites escaláveis, com uma forte arquitetura e uma quantidade razoável de código. Estes dois principios incluem: 
+A metodologia [Object Oriented CSS](http://oocss.org/) foi iniciada por Nicole Sullivan em seu trabalho escrevendo estilos para grandes sites. Object Oriented CSS identifica dois princípios que vão ajudar a construir sites escaláveis, com uma forte arquitetura e uma quantidade razoável de código. Estes dois principios incluem: 
 
 - Estrutura separada das interface
 
@@ -40,6 +40,28 @@ Separar o conteúdo dos containers envolve a remoção de dependências de um el
 
 ![](images/chapter1-img2.png)
 
-CSS Orientado a Objeto defende a construção de uma biblioteca de componentes, mantendo a flexibilidade, e utilizando um grid. Estas são boas regras básicas, e elas pode te ajudar a evitar a necessidade de adicionar estilos adicionais cada vez que você adicionar uma nova página ou uma novo recurso para um site. 
+Object Oriented CSS defende a construção de uma biblioteca de componentes, mantendo a flexibilidade, e utilizando um grid. Estas são boas regras básicas, e elas pode te ajudar a evitar a necessidade de adicionar estilos adicionais cada vez que você adicionar uma nova página ou uma novo recurso para um site. 
 
 ### Scalable & Modular Architecture for CSS
+
+Na mesma linha do Object Oriented CSS está a metodologia [Scalable & Modular Architecture for CSS](http://smacss.com/) desenvolvida por Jonathan Snook. A Scalable & Modular Architecture for CSS promove a de quebrar estilos em cinco categorias principais, incluindo: 
+
+- Base
+
+- Layout
+
+- Module
+
+- State
+
+- Theme
+
+A categoria `base` inclui estilos de elementos principais, cobrindo os padrões gerais. A categoria `layout`, em seguida, identifica os estilos dimensionamento e grid de diferentes elementos, determinando seu layout. Estilos de `module` são estilos mais específicos voltados para partes individuais de uma página, tais como navegação ou estilos de recursos. Os estilos de `state` são então utilizados para aumentar ou substituir outros estilos no caso em que um módulo inclui um estado alternativo, uma aba ativa, por exemplo. Por últimp, a categoria de `theme` pode ser adicionado, o que pode incluir estilos baseados em torno da interface, ou aparência e experiência, de diferentes módulos.
+
+![](imagens/chapter1-img3.png)
+
+![](imagens/chapter1-img4.png)
+
+No exemplo acima a classe `alert` se encaixa dentro da categoria `module` enquanto que a classe `is-error` se encaixa dentro da categoria `state`. Estilos de cada uma dessas categorias são então herdadas caso necessário.
+
+### Choosing a Methodology
